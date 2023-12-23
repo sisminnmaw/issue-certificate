@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Display and Download</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        #controls {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+        #content {
+            min-width: 700px;
+            min-height: 1000px;
+            background-image: url('./student_bg.png'); /* Local or same-origin image */
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            padding: 20px;
+            color: black; /* For text visibility */
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #content > span {
+            position: absolute;
+            text-align: center;
+        }
+        .student-name {
+            margin-top: 305px;
+            font-size: 2rem;
+            min-width: 700px;
+            font-family: ui-monospace;
+            font-weight: bold;
+        }
+        .student-name-small {
+            margin-top: 490px;
+            margin-left: 480px;
+            min-width: 165px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .session {
+            margin-top: 515px;
+            margin-left: 515px;
+            width: 1rem;
+            font-weight: bold;
+        }
+        .date {
+            margin-top: 600px;
+            margin-left: 95px;
+            font-size: 1.1rem;
+        }
+        .group {
+            margin-top: 620px;
+            margin-left: 185px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="controls">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" onkeyup="updateText()">
+        <br><br>
+        <label for="session">session no.:</label>
+        <input type="text" id="session" onkeyup="updateText()">
+        <br><br>
+        <label for="date">date:</label>
+        <input type="text" id="date" onkeyup="updateText()">
+        <br><br>
+        <label for="group">group:</label>
+        <input type="text" id="group" onkeyup="updateText()">
+        <br><br>
+        <button onclick="downloadPNG()">Download as PNG</button>
+    </div>
+
+    <div id="content">
+        <span id="displayStudentName" class="student-name"></span>
+        <span id="displayStudentNameSmall" class="student-name-small"></span>
+        <span id="displaySession" class="session"></span>
+        <span id="displayDate" class="date"></span>
+        <span id="displagroup" class="group"></span>
+    </div>
+</div>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="your_script.js"></script>
+</body>
+</html>
