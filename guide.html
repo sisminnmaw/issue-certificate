@@ -27,33 +27,34 @@
             position: absolute;
             text-align: center;
         }
-        .student-name {
+        .guide-name {
             margin-top: 305px;
             font-size: 2rem;
             min-width: 700px;
             font-family: ui-monospace;
             font-weight: bold;
         }
-        .student-name-small {
-            margin-top: 490px;
-            margin-left: 480px;
+        .guide-name-small {
+            margin-top: 545px;
+            margin-left: 68px;
             min-width: 165px;
             font-size: 1.2rem;
             font-weight: bold;
+            text-align: right !important;   
         }
         .session {
-            margin-top: 515px;
-            margin-left: 515px;
+            margin-top: 569px;
+            margin-left: 325px;
             width: 1rem;
             font-weight: bold;
         }
         .date {
-            margin-top: 600px;
-            margin-left: 95px;
+            margin-top: 746px;
+            margin-left: 170px;
             font-size: 1.1rem;
         }
         .issue {
-            margin-top: 620px;
+            margin-top: 767px;
             margin-left: 120px;
             font-size: 1.1rem;
         }
@@ -63,24 +64,24 @@
 
 <div class="container">
     <div id="controls">
-        <label for="studentName">Student Name:</label>
-        <input type="text" id="studentName" onkeyup="updateText()">
+        <label for="guideName">Guide Name:</label>
+        <input type="text" id="guideName" onkeyup="updateGuideText()">
         <br><br>
         <label for="session">session no.:</label>
-        <input type="text" id="session" onkeyup="updateText()">
+        <input type="text" id="session" onkeyup="updateGuideText()">
         <br><br>
         <label for="date">date:</label>
-        <input type="text" id="date" onkeyup="updateText()">
+        <input type="text" id="date" onkeyup="updateGuideText()">
         <br><br>
         <label for="issue">issue id:</label>
-        <input type="text" id="issue" onkeyup="updateText()">
+        <input type="text" id="issue" onkeyup="updateGuideText()">
         <br><br>
         <button onclick="downloadPNG()">Download as PNG</button>
     </div>
 
     <div id="content">
-        <span id="displayStudentName" class="student-name"></span>
-        <span id="displayStudentNameSmall" class="student-name-small"></span>
+        <span id="displayGuideName" class="guide-name"></span>
+        <span id="displayGuideNameSmall" class="guide-name-small"></span>
         <span id="displaySession" class="session"></span>
         <span id="displayDate" class="date"></span>
         <span id="displayIssue" class="issue"></span>

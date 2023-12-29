@@ -27,14 +27,14 @@
             position: absolute;
             text-align: center;
         }
-        .student-name {
+        .volunteer-name {
             margin-top: 305px;
             font-size: 2rem;
             min-width: 700px;
             font-family: ui-monospace;
             font-weight: bold;
         }
-        .student-name-small {
+        .volunteer-name-small {
             margin-top: 490px;
             margin-left: 480px;
             min-width: 165px;
@@ -42,18 +42,18 @@
             font-weight: bold;
         }
         .session {
-            margin-top: 515px;
-            margin-left: 515px;
+            margin-top: 569px;
+            margin-left: 45px;
             width: 1rem;
             font-weight: bold;
         }
         .date {
-            margin-top: 600px;
-            margin-left: 95px;
+            margin-top: 746px;
+            margin-left: 170px;
             font-size: 1.1rem;
         }
         .issue {
-            margin-top: 620px;
+            margin-top: 767px;
             margin-left: 120px;
             font-size: 1.1rem;
         }
@@ -63,24 +63,24 @@
 
 <div class="container">
     <div id="controls">
-        <label for="studentName">Student Name:</label>
-        <input type="text" id="studentName" onkeyup="updateText()">
+        <label for="volunteerName">Volunteer Name:</label>
+        <input type="text" id="volunteerName" onkeyup="updateVolunteerText()">
         <br><br>
         <label for="session">session no.:</label>
-        <input type="text" id="session" onkeyup="updateText()">
+        <input type="text" id="session" onkeyup="updateVolunteerText()">
         <br><br>
         <label for="date">date:</label>
-        <input type="text" id="date" onkeyup="updateText()">
+        <input type="text" id="date" onkeyup="updateVolunteerText()">
         <br><br>
         <label for="issue">issue id:</label>
-        <input type="text" id="issue" onkeyup="updateText()">
+        <input type="text" id="issue" onkeyup="updateVolunteerText()">
         <br><br>
         <button onclick="downloadPNG()">Download as PNG</button>
     </div>
 
     <div id="content">
-        <span id="displayStudentName" class="student-name"></span>
-        <span id="displayStudentNameSmall" class="student-name-small"></span>
+        <span id="displayVolunteerName" class="volunteer-name"></span>
+        <span id="displayVolunteerNameSmall" class="volunteer-name-small"></span>
         <span id="displaySession" class="session"></span>
         <span id="displayDate" class="date"></span>
         <span id="displayIssue" class="issue"></span>
