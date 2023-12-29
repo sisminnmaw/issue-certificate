@@ -3,7 +3,7 @@ function updateText() {
     document.getElementById('displayStudentNameSmall').textContent = document.getElementById('studentName').value;
     document.getElementById('displaySession').textContent = document.getElementById('session').value;
     document.getElementById('displayDate').textContent = document.getElementById('date').value;
-    document.getElementById('displagroup').textContent = document.getElementById('group').value;
+    document.getElementById('displayIssue').textContent = document.getElementById('issue').value;
 }
 
 function downloadPNG() {
